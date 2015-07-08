@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" href="appjs/css/base.css" />
+	<link rel="stylesheet" href="appjs/css/app.css" />
+	<link rel="stylesheet" href="appjs/css/animate.css" />
+	<link rel="stylesheet" href="appjs/css/font-awesome.min.css" />
+	<title>
+		uDia
+	</title>
+</head>
+
+<body>
+</body>
+
+<!-- include zepto.js -->
+<script src="appjs/js/lib/zepto.js"></script>
+
+<!-- include webapp.js -->
+<script src="lib/webapp.js"></script>
+
+<script>
+	//alert("希望你到这里还没闪退 1");
+	/* Events & Locks */
+	var refreshEvent = false;
+	var backButtonLock = false;
+
+	/* Loadpages from webapp.js */
+	webapp.loadPage('welcome');
+	webapp.loadPage('login');
+	webapp.loadPage('index');
+	webapp.loadPage('view');
+	webapp.loadPage('post');
+	webapp.loadPage('comment');
+	webapp.loadPage('search');
+	webapp.loadPage('photoViewer');
+	webapp.loadPage('edit');
+	webapp.loadPage('myCenter');
+	webapp.loadPage('world');
+	webapp.loadPage('college');
+	webapp.loadPage('adapter');
+
+		$.getScript("appjs/js/lib/clickable.js", function(){});
+		$.getScript("appjs/js/lib/scrollable.js", function(){});
+		$.getScript("appjs/js/lib/swapper.js", function(){});
+		$.getScript("appjs/js/app.js", function(){});
+		$.getScript("appjs/js/utils.js", function(){});
+		$.getScript("appjs/js/android-touch-fix..js", function(){});
+		$.getScript("appjs/js/events.js", function(){});
+		$.getScript("appjs/js/transitions.js", function(){});
+		$.getScript("appjs/js/scroll-fix.js", function(){});
+		$.getScript("appjs/js/scroll.js", function(){});
+		$.getScript("appjs/js/pages.js", function(){});
+		$.getScript("appjs/js/stack.js", function(){});
+		$.getScript("appjs/js/navigation.js", function(){});
+		
+		$.getScript("lib/data.js", function(){});
+		$.getScript("lib/components.js", function(){});
+		$.getScript("lib/lapp.js", function(){});
+		
+		$.getScript("controller/welcome.js", function(){});
+		$.getScript("controller/login.js", function(){}); 
+		$.getScript("controller/index.js", function(){});
+		$.getScript("controller/view.js", function(){}); 
+		$.getScript("controller/post.js", function(){});
+		$.getScript("controller/comment.js", function(){});
+		$.getScript("controller/search.js", function(){});
+		$.getScript("controller/photoViewer.js", function(){});
+		$.getScript("controller/edit.js", function(){});
+		$.getScript("controller/myCenter.js", function(){});
+		$.getScript("controller/world.js", function(){});
+		$.getScript("controller/college.js", function(){});
+		$.getScript("controller/adapter.js", function(){});
+		
+		$.getScript("controller/init.js", function(){});
+</script>
+</html>
